@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
+    /* 1. @import로 웹폰트 불러오기 */
+    @import url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-2@1.0/HakgyoansimWoojuR.woff2');
+
+    /* 2. @font-face 재선언 */
+    @font-face {
+        font-family: 'HakgyoansimWoojuR';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* 3. 적용 시 !important 추가 */
+    body, body * { 
+        font-family: 'HakgyoansimWoojuR', 'Nanum Myeongjo', serif !important; 
+    }
+        
         /* 학교안심 우주 폰트 웹폰트 정의 */
         @font-face {
             font-family: 'HakgyoansimWoojuR';
