@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
+        /* 학교안심 우주 폰트 웹폰트 정의 */
+        @font-face {
+            font-family: 'SchoolWooju';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         html { scroll-behavior: smooth; }
-        body { margin: 0; padding: 0; background-color: #f7f4f0; font-family: 'Nanum Myeongjo', serif; color: #333; line-height: 1.6; }
+        body { margin: 0; padding: 0; background-color: #f7f4f0; font-family: 'SchoolWooju', 'Nanum Myeongjo', serif; color: #333; line-height: 1.6; }
         
         .container { 
             width: 100%; max-width: 480px; margin: 0 auto; background-color: #fdfbf7; min-height: 100vh; 
@@ -49,7 +57,7 @@
             display: flex; justify-content: space-between; align-items: center;
             padding: 14px 22px 10px;
             color: rgba(255, 255, 255, 0.7);
-            font-size: 0.82rem; font-family: sans-serif;
+            font-size: 0.82rem; font-family: 'SchoolWooju', sans-serif;
             position: relative;
             z-index: 2;
         }
@@ -69,13 +77,13 @@
             opacity: 0.95;
         }
         .popup-sub-date {
-            font-size: 0.8rem; letter-spacing: 2px; color: #d8c3b0; font-family: sans-serif; margin-bottom: 6px; font-weight: 600;
+            font-size: 0.8rem; letter-spacing: 2px; color: #d8c3b0; font-family: 'SchoolWooju', sans-serif; margin-bottom: 6px; font-weight: 600;
         }
         .popup-main-title {
             font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; word-break: keep-all; line-height: 1.4; color: #fdfbf7;
         }
         .popup-desc {
-            font-size: 0.83rem; color: #e2d7cd; line-height: 1.5; margin-bottom: 18px; word-break: keep-all; font-family: sans-serif; opacity: 0.9;
+            font-size: 0.83rem; color: #e2d7cd; line-height: 1.5; margin-bottom: 18px; word-break: keep-all; font-family: 'SchoolWooju', sans-serif; opacity: 0.9;
         }
 
         .popup-action-btn {
@@ -88,7 +96,7 @@
             font-size: 0.95rem;
             border-radius: 16px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            font-family: sans-serif;
+            font-family: 'SchoolWooju', sans-serif;
             box-sizing: border-box;
         }
 
@@ -185,7 +193,7 @@
         .section { padding: 80px 20px; text-align: center; border-bottom: 1px solid #f2ece6; background-color: #fdfbf7; }
         .title { font-size: 1.3rem; letter-spacing: 3px; margin-bottom: 30px; color: #5c4538; font-weight: bold; }
 
-        .interview-subtitle { font-size: 0.85rem; letter-spacing: 3px; color: #a39385; font-family: sans-serif; margin-bottom: 12px; font-weight: 500; text-transform: uppercase; }
+        .interview-subtitle { font-size: 0.85rem; letter-spacing: 3px; color: #a39385; font-family: 'SchoolWooju', sans-serif; margin-bottom: 12px; font-weight: 500; text-transform: uppercase; }
         .interview-title { font-size: 1.35rem; color: #3a2e2b; font-weight: 700; margin-bottom: 24px; letter-spacing: -0.5px; }
         .interview-intro { font-size: 0.95rem; color: #665c54; line-height: 1.8; margin-bottom: 40px; word-break: keep-all; }
 
@@ -234,7 +242,7 @@
         .history-badge {
             position: absolute; bottom: 15px; right: 15px; z-index: 10;
             background: rgba(0, 0, 0, 0.45); color: #ffffff; backdrop-filter: blur(4px);
-            padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-family: sans-serif;
+            padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-family: 'SchoolWooju', sans-serif;
         }
 
         .history-nav-wrap {
@@ -353,7 +361,7 @@
         /* 하단 네비게이션 */
         .nav-wrapper { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; z-index: 1000; background-color: #ffffff; border-radius: 20px 20px 0 0; box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.08); padding-bottom: env(safe-area-inset-bottom, 0px); overflow: hidden; }
         .nav-bar-curved { display: flex; align-items: center; justify-content: space-around; height: 64px; width: 100%; }
-        .nav-item { display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #8c827a; font-size: 0.68rem; font-family: sans-serif; flex: 1; height: 100%; transition: color 0.2s ease; }
+        .nav-item { display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #8c827a; font-size: 0.68rem; font-family: 'SchoolWooju', sans-serif; flex: 1; height: 100%; transition: color 0.2s ease; }
         .nav-item .nav-icon-svg { width: 20px; height: 20px; margin-bottom: 4px; stroke: #8c827a; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.2s ease; }
         .nav-item:hover, .nav-item:active { color: #5c4538; }
         .nav-item:hover .nav-icon-svg, .nav-item:active .nav-icon-svg { stroke: #5c4538; }
@@ -517,7 +525,7 @@
             background: #3a2e2b;
         }
 
-        /* 하객 스냅 모달 */
+        /* 하객 스냅 모달 (새 창처럼 화면에 꽉 차게 수정) */
         .snap-modal-overlay {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px); z-index: 3000;
@@ -525,10 +533,10 @@
         }
         .snap-modal-overlay.active { display: flex; opacity: 1; }
         .snap-modal-card {
-            background: #fff; width: 90%; max-width: 440px; max-height: 85vh; border-radius: 24px;
+            background: #fdfbf7; width: 100%; max-width: 480px; height: 100%; max-height: 100vh; border-radius: 0;
             padding: 25px 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow-y: auto;
             position: relative; transform: translateY(20px); transition: transform 0.3s ease;
-            box-sizing: border-box; text-align: left;
+            box-sizing: border-box; text-align: left; display: flex; flex-direction: column;
         }
         .snap-modal-overlay.active .snap-modal-card { transform: translateY(0); }
         .snap-modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 12px; }
@@ -574,19 +582,6 @@
                     <div class="popup-action-btn">참석 여부 전달하기 ➔</div>
                 </div>
             </div>
-        </div>
-
-        <!-- 배경음악 -->
-        <audio id="bgm" loop>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        </audio>
-
-        <div id="bgmBtn" class="bgm-controls glass-btn" onclick="toggleBgm()">
-            <svg class="music-icon-svg" viewBox="0 0 24 24">
-                <path d="M9 18V5l12-2v13"></path>
-                <circle cx="6" cy="18" r="3"></circle>
-                <circle cx="18" cy="16" r="3"></circle>
-            </svg>
         </div>
 
         <!-- 배경음악 -->
@@ -694,7 +689,7 @@
             <button type="button" id="btnGalleryMore" class="btn-gallery-more glass-btn" onclick="toggleGalleryMore()">더보기</button>
         </div>
 
-        <!-- HISTORY 섹션 (추가됨) -->
+        <!-- HISTORY 섹션 -->
         <div id="history" class="history-section">
             <div class="title">HISTORY</div>
             
@@ -898,7 +893,7 @@
                 <div class="info-tab-img" style="background-image: url('https://lh3.google.com/u/0/d/1DOwMQ-WtM_ipqsb77x03Nz6h550xMWd_=w2000-h1530-iv1?auditContext=forDisplay');"></div>
                 <div class="info-tab-heading">ATM기 위치안내</div>
                 <ul class="info-tab-list">
-                    <li><strong>퀸벨호텔 1층 :</strong>  입구 좌측</li>
+                    <li><strong>퀸벨호텔 1층 :</strong> 입구 좌측</li>
                     <li><strong>세븐일레븐대구퀸벨호텔점 ATM :</strong> 서울역 버스환</li>
                     <li><strong>iM뱅크 신우유통 동구점 ATM:</strong> 도보 4분</li>
                     <li>탑승을 원하시는 분은 RSVP 참석 여부 전달 시 작성해 주시기 바랍니다.</li>
@@ -1468,81 +1463,85 @@
                 const img = document.createElement('img');
                 img.src = URL.createObjectURL(file);
                 
-                const removeBtn = document.createElement('button');
-                removeBtn.className = 'snap-remove-btn';
-                removeBtn.innerHTML = '✕';
-                removeBtn.onclick = (e) => {
+                const rmBtn = document.createElement('button');
+                rmBtn.className = 'snap-remove-btn';
+                rmBtn.innerHTML = '✕';
+                rmBtn.onclick = (e) => {
                     e.stopPropagation();
                     removeSnapFile(idx);
                 };
-
+                
                 item.appendChild(img);
-                item.appendChild(removeBtn);
+                item.appendChild(rmBtn);
                 grid.appendChild(item);
             });
         }
 
         async function submitSnapFiles() {
-            const nameInput = document.getElementById('uploaderName').value.trim();
-            
-            if (!nameInput) {
-                alert('성함을 입력해 주세요.');
-                document.getElementById('uploaderName').focus();
+            const nameInput = document.getElementById('uploaderName');
+            const uploaderName = nameInput.value.trim();
+
+            if (!uploaderName) {
+                alert("작성자 성함을 입력해 주세요.");
+                nameInput.focus();
                 return;
             }
 
             if (attachedSnapFiles.length === 0) {
-                alert('최소 1장 이상의 사진을 첨부해 주세요.');
+                alert("공유할 사진을 1장 이상 첨부해 주세요.");
                 return;
             }
 
             const submitBtn = document.querySelector('.btn-snap-submit');
             submitBtn.disabled = true;
-            submitBtn.textContent = '전송 중...';
+            submitBtn.textContent = '사진 업로드 중...';
 
             try {
-                const filePromises = attachedSnapFiles.map(file => {
-                    return new Promise((resolve, reject) => {
-                        const reader = new FileReader();
-                        reader.onload = () => resolve({
-                            name: file.name,
-                            type: file.type,
-                            base64: reader.result
-                        });
-                        reader.onerror = reject;
-                        reader.readAsDataURL(file);
+                for (let i = 0; i < attachedSnapFiles.length; i++) {
+                    const file = attachedSnapFiles[i];
+                    const base64Data = await convertFileToBase64(file);
+                    
+                    const payload = {
+                        uploader: uploaderName,
+                        fileName: file.name,
+                        mimeType: file.type,
+                        fileData: base64Data
+                    };
+
+                    await fetch(GAS_WEB_APP_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
                     });
-                });
-
-                const fileDataList = await Promise.all(filePromises);
-
-                const response = await fetch(GAS_WEB_APP_URL, {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        uploaderName: nameInput,
-                        files: fileDataList
-                    })
-                });
-
-                const result = await response.json();
-
-                if (result.result === 'success') {
-                    alert(`${nameInput}님의 소중한 사진 ${attachedSnapFiles.length}장이 성공적으로 전달되었습니다!`);
-                    attachedSnapFiles = [];
-                    document.getElementById('uploaderName').value = '';
-                    updateSnapPreview();
-                    closeSnapModal();
-                    fetchSnapCount();
-                } else {
-                    alert('업로드 중 오류가 발생했습니다. 다시 시도해 주세요.');
                 }
-            } catch (error) {
-                console.error(error);
-                alert('전송 중 오류가 발생했습니다.');
+
+                alert("소중한 사진이 성공적으로 공유되었습니다. 감사합니다!");
+                attachedSnapFiles = [];
+                nameInput.value = '';
+                updateSnapPreview();
+                closeSnapModal();
+                fetchSnapCount();
+            } catch (err) {
+                console.error("업로드 오류:", err);
+                alert("사진 업로드 중 오류가 발생했습니다. 다시 시도해 주세요.");
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.textContent = '사진 전송하기';
             }
+        }
+
+        function convertFileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const result = reader.result;
+                    const base64 = result.split(',')[1];
+                    resolve(base64);
+                };
+                reader.onerror = error => reject(error);
+                reader.readAsDataURL(file);
+            });
         }
     </script>
 </body>
